@@ -1,0 +1,1 @@
+// exports.TemplateModule = Template;

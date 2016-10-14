@@ -1,0 +1,6 @@
+npm init
+npm install gulp browserify vinyl-source-stream gulp-concat gulp-uglify gulp-util del jshint gulp-jshint gulp-sass gulp-sourcemaps --save-dev
+bower init
+bower install
+bower install jquery bootstrap --save
+npm install bower-files browser-sync --save-dev
