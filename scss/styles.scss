@@ -1,8 +1,19 @@
 body {
   color:white;
-  background-color: crimson;
+  background-color: navy;
+  font-family: sans-serif;
 }
 
 body input {
   color: black;
+}
+
+.lucha{
+  background-color: red;
+  color:white;
+  font-family: monospace;
+}
+
+.risorgimento{
+  display: none;
 }
