@@ -1,7 +1,70 @@
 body {
-  color:white;
-  background-color: navy;
+  background-color: white;
+}
+
+.intro{
   font-family: sans-serif;
+  color: gray;
+}
+
+.navigation{
+  margin-top:25px;
+}
+
+.navigation span{
+  display: inline;
+  padding-right: 15px;
+}
+
+.navigation .link:hover{
+  text-decoration: underline;
+  text-shadow: 1px 1px gray;
+  cursor: pointer;
+}
+
+.footer{
+  text-align: center;
+  position: fixed;
+  bottom:10px;
+  left:35%;
+  font-size: 1em;
+}
+
+.intro-section{
+    background-image:url("./../../public/images/professional.jpg");
+    opacity: .9;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:fixed;
+    width:100%;
+    height:80%;
+    top:10%;
+    left:0px;
+    text-align: center;
+    color:white;
+    padding-top: 10%;
+}
+
+.intro button{
+  height: 2em;
+  width: 4em;
+  font-size: 1.5em;
+  border-radius: 20%;
+  border: 4px solid white;
+  color: #ddd;
+  background-color: #444;
+}
+
+.intro button:hover{
+  color: #444;
+  background-color: #ddd;
+}
+
+h6{
+
+  position: absolute;
+  bottom: 10px;
 }
 
 body input {
@@ -9,9 +72,11 @@ body input {
 }
 
 .lucha{
-  background-color: red;
-  color:white;
+  background-color: #55aaff;
+  color:red;
+  font-weight: bold;
   font-family: monospace;
+  background-image: url("./../../public/images/sicilia.jpg");
 }
 
 .risorgimento{

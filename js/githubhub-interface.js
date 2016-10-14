@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
 
-  $("#launch").click(function(event){
+  $(".launch").click(function(event){
     $("body").addClass("lucha");
     $(".risorgimento").show();
     $(".intro").hide();
