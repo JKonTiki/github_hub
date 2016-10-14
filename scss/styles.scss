@@ -22,18 +22,35 @@ body {
   cursor: pointer;
 }
 
-.footer{
-  text-align: center;
-  position: fixed;
-  bottom:10px;
-  left:35%;
-  font-size: 1em;
+img.link:hover{
+  cursor: pointer;
 }
 
-.intro-section{
+#logo{
+  height: 3em;
+  width: auto;
+  position: fixed;
+  top:20px;
+  right:60px;
+}
+
+.footer-holder{
+  position: fixed;
+  bottom:10px;
+  left:0;
+  width: 100%;
+  background: linear-gradient(white, #999);
+  height: 7%;
+}
+
+.footer{
+  font-size: 1em;
+  text-align: center;
+}
+
+.intro-main{
     background-image:url("./../../public/images/professional.jpg");
     opacity: .9;
-    background-repeat: no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
     position:fixed;
@@ -61,15 +78,13 @@ body {
   background-color: #ddd;
 }
 
-h6{
-
+.intro-main h6{
   position: absolute;
   bottom: 10px;
 }
 
-body input {
-  color: black;
-}
+
+// !!!!!VIVA LA REVOLUCION!!!!!
 
 .lucha{
   background-color: #55aaff;
@@ -77,8 +92,21 @@ body input {
   font-weight: bold;
   font-family: monospace;
   background-image: url("./../../public/images/sicilia.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// .la-sicilia-holder{
+//   height:100vh;
+//   width:100vh;
+// }
+
+input {
+  color: black;
 }
 
 .risorgimento{
   display: none;
+  height: 100vh;
+  width: 100vh;
 }
