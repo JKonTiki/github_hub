@@ -32,7 +32,7 @@ gulp.task('jsBrowserify', ['concatInterface'], function() {
 gulp.task('concatInterface', function() {
   return gulp.src(['./js/*-interface.js'])
   .pipe(concat('allConcat.js'))
-  .pipe(gulp.dest('./tmp'))
+  .pipe(gulp.dest('./tmp'));
 });
 
 gulp.task("minifyScripts", ["jsBrowserify"], function() {
