@@ -3,7 +3,7 @@ body {
 }
 
 .intro{
-  font-family: sans-serif;
+  font-family: 'Abel', sans-serif;
   color: gray;
 }
 
@@ -88,25 +88,68 @@ img.link:hover{
 
 .lucha{
   background-color: #55aaff;
-  color:red;
+  color:white;
   font-weight: bold;
-  font-family: monospace;
+  font-family: 'Bad Script', cursive;
   background-image: url("./../../public/images/sicilia.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-// .la-sicilia-holder{
-//   height:100vh;
-//   width:100vh;
-// }
-
 input {
   color: black;
+  font-family: cursive;
 }
 
 .risorgimento{
-  display: none;
   height: 100vh;
-  width: 100vh;
+  width:100vh;
 }
+
+.stage-1, .stage-2, .stage-3, .stage-4{
+  display: none;
+}
+
+#audio{
+  position: fixed;
+  bottom: 15px;
+  left:30px;
+}
+
+#garibaldi{
+  position: fixed;
+  top: 6%;
+  right: 10%;
+  height: 25em;
+  width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// adsf

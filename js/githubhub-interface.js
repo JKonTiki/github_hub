@@ -3,11 +3,12 @@
 $(document).ready(function(){
 
   $(".launch").click(function(event){
+    $(".intro").hide();
     $("body").addClass("lucha");
     $(".risorgimento").show();
-    $(".intro").hide();
+    $(".stage-1").show();
     var audio = document.getElementById("myAudio");
-    // audio.play();
+    audio.play();
   });
 
   $("#user-form").submit(function(event){
