@@ -3,7 +3,7 @@
   "description": "",
   "main": "index.js",
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/JKonTiki/github_hub",
   "ignore": [
     "**/.*",
     "node_modules",

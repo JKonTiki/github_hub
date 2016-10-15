@@ -2,6 +2,8 @@ body {
   background-color: white;
 }
 
+// intro page
+
 .intro{
   font-family: 'Abel', sans-serif;
   color: gray;
@@ -87,7 +89,10 @@ img.link:hover{
 
 // !!!!!VIVA LA REVOLUCION!!!!!
 
-.lucha{
+
+// stage 1
+
+.lucha-1{
   background-color: #55aaff;
   color:white;
   font-weight: bold;
@@ -99,7 +104,11 @@ img.link:hover{
 
 input {
   color: black;
-  font-family: cursive;
+  font-family: sans-serif;
+}
+
+button{
+  font-family: sans-serif;
 }
 
 .risorgimento{
@@ -113,6 +122,7 @@ input {
 }
 
 .audio{
+  display: none;
   position: fixed;
   bottom: 15px;
   left:30px;
@@ -126,7 +136,7 @@ input {
   width: auto;
 }
 
-.stage{
+.stage-1{
   margin-left: 20%;
   margin-top: 5%;
 }
@@ -141,16 +151,72 @@ input {
   padding: 3em;
 }
 
+.risorgimento button{
+  margin-left: 3em;
+}
 
 
 
+// stage 2
 
+#guerra-civil{
+  height: 100vh;
+  width:100vh;
+}
 
+.interim-1-2{
+  background-color: #b20505;
+}
 
+.lucha-2{
+  color:white;
+  font-weight: bold;
+  font-family: 'Special Elite', cursive;
+  background-image: url("./../../public/images/spain3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+#stage-2-text{
+  border-radius: 20%;
+  background-color: #b20505;
+  opacity: .8;
+  width:60em;
+  color: white;
+  padding: 4em;
+}
 
+#orwell{
+  position: fixed;
+  top: 6%;
+  right: 10%;
+  height: 30em;
+  width: auto;
+}
 
+.stage-2{
+  margin-left: 5%;
+  margin-top: 5%;
+}
 
+.stage-2 form{
+  margin-left: 4em;
+}
+
+.stage-2 button{
+  margin-top: 1em;
+  font-size: 1.5em;
+  color: black;
+  background-color: white;
+}
+
+.stage-2 input{
+  width: 19em;
+}
+
+#orwell-continue{
+  margin-left: 4em;
+}
 
 
 

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Abel|Bad+Script|Dancing+Script" rel="stylesheet">    <link rel="stylesheet" href="build/css/vendor.css">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite|Abel|Bad+Script|Dancing+Script" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/vendor.css">
     <span class="favicon"><link rel="icon" href="public/images/github.png"></span>
     <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
@@ -34,7 +35,7 @@
 
       <div class="risorgimento">
 
-        <div class="stage" id="stage-1">
+        <div class="stage stage-1">
           <img src="public/images/garibaldi.png" alt="un homme spectaculeur" id="garibaldi" class="no-show">
           <div id="stage-1-text" class="no-show">
             <h1 class="no-show" id="stage-1-1">bonjourno, compagno.</h1>
@@ -48,19 +49,69 @@
               Papal corruption and monarchal tyranny have divided this people for centuries, and my soldiers know that with hunger and cold is it that we must make alliance if fortune is to be found.
             </h2>
 
-            <h2 class="no-show" id="stage-1-3">
-              Papal corruption and monarchal tyranny have divided this people for centuries, and my soldiers know that with hunger and cold is it that we must make alliance if fortune is to be found.
+            <h2 class="no-show" id="stage-1-4">
+              I understand that you, too, fight for a noble cause, and that you search for a great leader and their body of work. Im afraid my time may not hold the answers you seek, but am I right in these determinations?
+              <br><br>
+              <button type="button" class="end-stage-1">AFFIRM</button>
             </h2>
 
           </div>
         </div>
+      </div>
 
 
 
+      <div class="stage stage-2" id="guerra-civil">
+        <img src="public/images/orwell.jpg" alt="a fine chap" id="orwell" class="no-show">
+        <div id="stage-2-text" class="no-show">
+          <h1 class="no-show" id="stage-2-1">Cheers, comrade, and welcome to the cause.</h1>
+          <br>
+          <h2 class="no-show" id="stage-2-2">
+            I'm George Orwell, the Englishman eventually known for revolutionary works such as <em>Animal Farm</em> and <em>1984</em>. But I dont just <em>write</em> about what i believe in.
+            <br>
+          </h2>
+          <h2 class="no-show" id="stage-2-3">
+              You and I, old chap, we're somewhere in the Aragon region of Spain. The year is 1937, and the enemy: fascists.
+              <br>
+          </h2>
+          <div class="no-show" id="stage-2-4">
+            <h2>
+              These blasted rifles wouldn't have made due in Cromwell's age, but damn me to doldroms if that wretched bastard Franco doesn't face every last grain of English pride left in the Isles.
+            </h2>
+            <button type="button" id="orwell-continue">AFFIRM</button>
+          </div>
+          <h2 class="no-show" id="stage-2-5">
+            I understand that you, too, fight for a noble cause, and that you search for a great leader and their body of work. Im afraid my time may not hold the answers you seek, but am I right in these determinations?
+          </h2>
 
-        <div class="stage-2 stage">
+          <h2 class="no-show" id="stage-2-6">
+            so you're a brigadier yourself, I catch. peachy business these days, isn't it? Hah! If you're looking for a regiment, perhaps i may be of service. What do you know of the one you're after?
+          </h2>
+
+          <div class="no-show" id="stage-2-7">
+            <h2>
+              A "GitHub username"? I'm afraid i'm not familiar with the concept - must be talk from across the pond. Well if I can't give you the details you need then perhaps I'll know someone who can.
+            </h2>
+
+            <form id="user-form">
+              <input id="username" type="text" name="username" required>
+              <br>
+              <button type="submit">SPECIFY GH USERNAME</button>
+            </form>
+          </div>
 
         </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -88,9 +139,15 @@
 
 
 
-        <span id="battle-sounds" class="no-show"><audio id="battle" src="public/audio/battle.mp3" controls></audio></span>
+        <span id="battle-1" class="no-show battle-sounds"><audio id="battle1" src="public/audio/battle.mp3" controls></audio></span>
         <span id="song1" class="audio"><audio id="a-contratiempo" src="public/audio/a-contratiempo.mp3" controls></audio></span>
+
+        <span id="battle-2" class="no-show battle-sounds"><audio id="battle2" src="public/audio/battle2.mp3" controls></audio></span>
+        <span id="song2" class="audio"><audio id="bella-ciao" src="public/audio/bella-ciao.m4a" controls></audio></span>
+
+
       </div>
     </div>
+    <button id="skip1" type="button" class="end-stage-1">SKIP TO STAGE 2</button>
   </body>
 </html>

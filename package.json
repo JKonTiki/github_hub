@@ -22,5 +22,13 @@
     "jshint": "^2.9.3",
     "vinyl-source-stream": "^1.1.0"
   },
-  "description": ""
+  "description": "#### This app allows users to pull data from the GitHub API and experience it through a more interesting viewport: https://jkontiki.github.io/github_hub/.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JKonTiki/github_hub.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JKonTiki/github_hub/issues"
+  },
+  "homepage": "https://github.com/JKonTiki/github_hub#readme"
 }
