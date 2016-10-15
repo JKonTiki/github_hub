@@ -19,14 +19,17 @@ $(document).ready(function(){
       $("#stage-1").show();
       setTimeout(function(){
         $("#garibaldi").fadeIn(5000);
+        setTimeout(function(){
+          $("#stage-1-text").fadeIn(1000);
+          $("#stage-1-1").fadeIn(1000);
+        }, 5200);
+          setTimeout(function(){
+            $("#stage-1-2").fadeIn(1000);
+            setTimeout(function(){
+              $("#stage-1-2").fadeIn(1000);
+            }, 3400);
+          }, 3400);
       }, 1000);
-      setTimeout(function(){
-        $("#stage-1-text").fadeIn(1000);
-        $("#stage-1-1").fadeIn(1000);
-      }, 6200);
-      setTimeout(function(){
-        $("#stage-1-2").fadeIn(1000);
-      }, 8600);
     }, 6000);
   });
 
