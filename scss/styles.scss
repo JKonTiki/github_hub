@@ -9,6 +9,7 @@ body {
 
 .navigation{
   margin-top:25px;
+  margin-left: 7%;
 }
 
 .navigation span{
@@ -102,11 +103,12 @@ input {
 }
 
 .risorgimento{
+  display: none;
   height: 100vh;
   width:100vh;
 }
 
-.stage-1, .stage-2, .stage-3, .stage-4{
+.no-show, .stage{
   display: none;
 }
 
@@ -124,9 +126,10 @@ input {
   width: auto;
 }
 
-
-
-
+.stage{
+  margin-left: 20%;
+  margin-top: 10%;
+}
 
 
 
