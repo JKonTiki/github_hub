@@ -4,12 +4,17 @@ $(document).ready(function(){
 
   $(".launch").click(function(event){
     event.preventDefault();
-    var audio = document.getElementById("myAudio");
-    audio.play();
+    var battle = document.getElementById("battle");
+    var a_contratiempo = document.getElementById("a-contratiempo");
     $(".intro").hide();
+    $(".favicon").hide();
+    $("head").append("<span class='favicon'><link rel='icon' href='public/images/italy.png'></span>");
+    battle.play();
+    setTimeout(function(){
+      a_contratiempo.play();
+    }, 4000);
     setTimeout(function(){
       $("body").addClass("lucha");
-
       $(".risorgimento").show();
       $("#stage-1").show();
       setTimeout(function(){
@@ -21,8 +26,8 @@ $(document).ready(function(){
       }, 6200);
       setTimeout(function(){
         $("#stage-1-2").fadeIn(1000);
-      }, 8300);
-    }, 2000);
+      }, 8600);
+    }, 6000);
   });
 
   $("#user-form").submit(function(event){
