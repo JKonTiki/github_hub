@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Special+Elite|Abel|Bad+Script|Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore|Special+Elite|Abel|Bad+Script|Dancing+Script" rel="stylesheet">
     <link rel="stylesheet" href="build/css/vendor.css">
     <span class="favicon"><link rel="icon" href="public/images/github.png"></span>
     <link rel="stylesheet" href="build/css/styles.css">
@@ -49,12 +49,11 @@
               Papal corruption and monarchal tyranny have divided this people for centuries, and my soldiers know that with hunger and cold is it that we must make alliance if fortune is to be found.
             </h2>
 
-            <h2 class="no-show" id="stage-1-4">
-              I understand that you, too, fight for a noble cause, and that you search for a great leader and their body of work. Im afraid my time may not hold the answers you seek, but am I right in these determinations?
+            <div class="no-show" id="stage-1-4">
+              <h2>I understand that you, too, fight for a noble cause, and that you search for a great leader and their body of work. Im afraid my time may not hold the answers you seek, but am I right in these determinations?</h2>
               <br><br>
               <button type="button" class="end-stage-1">AFFIRM</button>
-            </h2>
-
+            </div>
           </div>
         </div>
       </div>
@@ -76,7 +75,7 @@
           </h2>
           <div class="no-show" id="stage-2-4">
             <h2>
-              These blasted rifles wouldn't have made due in Cromwell's age, but damn me to doldroms if that wretched bastard Franco doesn't face every last grain of English pride left in the Isles.
+              These blasted rifles wouldn't have made due in Cromwell's age, but damn me to doldroms if that wretched bastard Franco doesn't face every last grain of English pride left in those Isles.
             </h2>
             <button type="button" id="orwell-continue">AFFIRM</button>
           </div>
@@ -85,7 +84,7 @@
           </h2>
 
           <h2 class="no-show" id="stage-2-6">
-            so you're a brigadier yourself, I catch. peachy business these days, isn't it? Hah! If you're looking for a regiment, perhaps i may be of service. What do you know of the one you're after?
+            so you're a brigadier yourself, I catch. peachy business these days, isn't it? Hah! If you're looking for a <em>comandante</em>, perhaps i may be of service. What do you know of the one you're after?
           </h2>
 
           <div class="no-show" id="stage-2-7">
@@ -96,11 +95,52 @@
             <form id="user-form">
               <input id="username" type="text" name="username" required>
               <br>
-              <button type="submit">SPECIFY GH USERNAME</button>
+              <button type="submit" class="end-stage-2">SPECIFY GH USERNAME</button>
             </form>
           </div>
 
         </div>
+      </div>
+
+
+<!-- STAGE 3 -->
+
+
+
+
+
+
+
+      <div class="stage stage-3" id="revolucion">
+        <img src="public/images/che.png" alt="un hombre iconico" id="che" class="no-show">
+        <div id="stage-3-text" class="no-show">
+          <h1 class="no-show" id="stage-3-1">Bienvenido a la revolucion, campesino.</h1>
+          <br>
+          <h2 class="no-show" id="stage-3-2">
+            I am el Che Guevara, a key figure in Cuba's revolution and enduring fashion icon.
+            <br>
+          </h2>
+          <h2 class="no-show" id="stage-3-3">
+            Capitalism is consuming the last bastions of goodness around Latin America and across the world. It is clear that we can achieve peace only by taking up arms against the great powers who step on the throats of the humble <em>gente global</em>.
+            <br>
+          </h2>
+          <div class="no-show" id="stage-3-4">
+            <h2>
+              Somos militantes, you and I, and we speak only one language, so let's get to business. You are looking for the positions of <em>el jefe</em> known only as <span class="username-placeholder"></span>. I have aqui all relevant files obtained from our spies in America:
+              <br>
+            </h2>
+            <div class="repository-box">
+              <ul class="repository-list">
+              </ul>
+            </div>
+          </div>
+          <h2 class="no-show" id="stage-3-5">
+            A luego, amigo, y Viva la Revolucion!
+          </h2>
+        </div>
+        <h2 class="no-show" id="stage-3-6">
+          CONGRATULATIONS, YOU HAVE COMPLETED github_hub. <a href="/">PLAY AGAIN?</a>
+        </h2>
       </div>
 
 
@@ -116,18 +156,6 @@
 
 
 
-
-
-        <div class="stage-3 stage">
-
-          <form id="user-form">
-            <label for="username">Enter a username:</label>
-            <input id="username" type="text" name="username" required>
-            <button type="submit">enter</button>
-          </form>
-
-
-        </div>
 
 
         <div class="stage-4 stage">
@@ -138,6 +166,8 @@
         </div>
 
 
+        <!-- AUDIO -->
+
 
         <span id="battle-1" class="no-show battle-sounds"><audio id="battle1" src="public/audio/battle.mp3" controls></audio></span>
         <span id="song1" class="audio"><audio id="a-contratiempo" src="public/audio/a-contratiempo.mp3" controls></audio></span>
@@ -145,9 +175,17 @@
         <span id="battle-2" class="no-show battle-sounds"><audio id="battle2" src="public/audio/battle2.mp3" controls></audio></span>
         <span id="song2" class="audio"><audio id="bella-ciao" src="public/audio/bella-ciao.m4a" controls></audio></span>
 
+        <span id="battle-3" class="no-show battle-sounds"><audio id="battle3" src="public/audio/revolucion.m4a" controls></audio></span>
+        <span id="song3" class="audio"><audio id="hasta-siempre" src="public/audio/hasta-siempre.mp3" controls></audio></span>
+
+
 
       </div>
     </div>
-    <button id="skip1" type="button" class="end-stage-1">SKIP TO STAGE 2</button>
+
+    <!-- FOR TESTING -->
+    <!-- <button id="skip1" type="button" class="end-stage-1">SKIP TO STAGE 2</button>
+    <button id="skip2" type="button" class="end-stage-2">SKIP TO STAGE 3</button> -->
+
   </body>
 </html>
