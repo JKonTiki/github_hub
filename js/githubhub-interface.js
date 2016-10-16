@@ -17,7 +17,7 @@ $(document).ready(function(){
       $("body").addClass("lucha-1");
       $(".risorgimento").show();
       $(".stage-1").show();
-      $("#song1").show();
+      // $("#song1").show();
       setTimeout(function(){
         $("#garibaldi").fadeIn(5000);
         setTimeout(function(){
@@ -39,8 +39,7 @@ $(document).ready(function(){
 
 
   $(".end-stage-1").click(function(event){
-    $("#skip1").hide();
-    $("#skip2").hide();
+    $(".skip-button").hide();
     event.preventDefault();
     var a_contratiempo = document.getElementById("a-contratiempo");
     a_contratiempo.pause();
@@ -60,7 +59,7 @@ $(document).ready(function(){
       bella_ciao.play();
     }, 6500);
     setTimeout(function(){
-      $("#song2").show();
+      // $("#song2").show();
       $("body").addClass("lucha-2");
       $(".stage-2").show();
       setTimeout(function(){
@@ -83,6 +82,7 @@ $(document).ready(function(){
   });
 
   $("#orwell-continue").click(function(event){
+    event.preventDefault();
     $("#orwell-continue").hide();
     $("#stage-2-6").fadeIn(1000);
     setTimeout(function(){
@@ -90,52 +90,22 @@ $(document).ready(function(){
     }, 7000);
   });
 
+  $(".play-again").click(function(event){
+    event.preventDefault();
+    $(".skip-button").hide();
+    var hasta_siempre = document.getElementById("hasta-siempre");
+    hasta_siempre.pause();
+    var vortex = document.getElementById("vortex");
+    vortex.play();
+    $("body").removeClass("interim-2-3");
+    $("body").removeClass("lucha-3");
+    $(".stage-3").hide();
+    $("body").addClass("vortex");
+    setTimeout(function(){
+      location.reload();
+    }, 4000);
+  });
+
   // $(".end-stage-2").click(function(event){
-  //   $("#skip1").hide();
-  //   $("#skip2").hide();
-  //   event.preventDefault();
-  //   var bella_ciao = document.getElementById("bella-ciao");
-  //   bella_ciao.pause();
-  //   $("#song2").hide();
-  //   var battle3 = document.getElementById("battle3");
-  //   var hasta_siempre = document.getElementById("hasta-siempre");
-  //   $(".intro").hide();
-  //   $(".risorgimento").hide();
-  //   $("#guerra-civil").hide();
-  //   $(".favicon").remove();
-  //   $("head").append("<span class='favicon'><link rel='icon' href='public/images/cuba-flag.png'></span>");
-  //   $("body").removeClass("lucha-2");
-  //   $("body").addClass("interim-2-3");
-  //   battle3.play();
-  //   setTimeout(function(){
-  //     hasta_siempre.play();
-  //   }, 9500);
-  //   setTimeout(function(){
-  //     $("#song3").show();
-  //     $("body").addClass("lucha-3");
-  //     $(".stage-3").show();
-  //     setTimeout(function(){
-  //       $("#che").fadeIn(4000);
-  //       setTimeout(function(){
-  //         $("#stage-3-text").fadeIn(1000);
-  //         $("#stage-3-1").fadeIn(1000);
-  //         setTimeout(function(){
-  //           $("#stage-3-2").fadeIn(1000);
-  //           setTimeout(function(){
-  //             $("#stage-3-3").fadeIn(1000);
-  //             setTimeout(function(){
-  //               $("#stage-3-4").fadeIn(1000);
-  //               setTimeout(function(){
-  //                 $("#stage-3-5").fadeIn(1000);
-  //                 setTimeout(function(){
-  //                   $("#stage-3-6").fadeIn(1000);
-  //                 }, 6500);
-  //               }, 5500);
-  //             }, 6500);
-  //           }, 4500);
-  //         }, 4500);
-  //       }, 7500);
-  //     }, 1000);
-  //   }, 10800);
   // });
 });

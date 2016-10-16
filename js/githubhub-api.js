@@ -13,11 +13,13 @@ User.prototype.getRepos = function(_username){
       temp.push(response[i].name);
     }
     this.repositories = temp;
+    this.username = _username;
   for (var j = 0; j < this.repositories.length; j++) {
     $(".repository-list").append("<li><a target='_blank' href=https://github.com/" + _username + "/" + this.repositories[j] + " >" + this.repositories[j] + "</a></li>");
   }
-  console.log(this.username);
-  console.log(this.repositories);
+  // console.log(this.username);
+  // console.log(this.repositories);
+  $(".username-placeholder").text(this.username);
   if(this.repositories.length === 0){
     var cities = ["Havana","Santiago","Camaguey", "Holguin", "Santa Clara", "Guantanamo", "Bayamo", "Las Tunas"];
     for (var l = 0; l < cities.length; l++) {
@@ -35,8 +37,9 @@ User.prototype.getRepos = function(_username){
       for (var k = 0; k < this.repositories.length; k++) {
         $(".repository-list").append("<li><a target='_blank' href=https://github.com/JKonTiki/" + this.repositories[k] + " >" + this.repositories[k] + "</a></li>");
       }
-      console.log(this.username);
-      console.log(this.repositories);
+      // console.log(this.username);
+      // console.log(this.repositories);
+      $(".username-placeholder").text(this.username + ", for I believe this is the one you seek");
       if(this.repositories.length === 0){
         var cities = ["Havana","Santiago","Camaguey", "Holguin", "Santa Clara", "Guantanamo", "Bayamo", "Las Tunas"];
         for (var l = 0; l < cities.length; l++) {
@@ -64,8 +67,7 @@ $(document).ready(function(){
 
     // UNRELATED FRONT END ACTIVITY
 
-    $("#skip1").hide();
-    $("#skip2").hide();
+    $(".skip-button").hide();
     event.preventDefault();
     var bella_ciao = document.getElementById("bella-ciao");
     bella_ciao.pause();
@@ -84,7 +86,7 @@ $(document).ready(function(){
       hasta_siempre.play();
     }, 9500);
     setTimeout(function(){
-      $("#song3").show();
+      // $("#song3").show();
       $("body").addClass("lucha-3");
       $(".stage-3").show();
       setTimeout(function(){
