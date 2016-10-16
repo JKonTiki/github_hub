@@ -39,11 +39,11 @@ img.link:hover{
 
 .footer-holder{
   position: fixed;
-  bottom:10px;
+  bottom:0px;
   left:0;
   width: 100%;
   background: linear-gradient(white, #999);
-  height: 7%;
+  height: 10%;
 }
 
 .footer{
@@ -137,7 +137,7 @@ button{
 }
 
 .stage-1{
-  margin-left: 20%;
+  margin-left: 10%;
   margin-top: 5%;
 }
 
@@ -146,7 +146,7 @@ button{
   background-color: white;
   opacity: .5;
   height: 70%;
-  width:60em;
+  width:40em;
   color: black;
   padding: 3em;
 }
@@ -183,7 +183,7 @@ button{
   border-radius: 20%;
   background-color: #b20505;
   opacity: .8;
-  width:60em;
+  width:40em;
   color: white;
   padding: 4em;
 }
@@ -192,7 +192,7 @@ button{
   position: fixed;
   top: 6%;
   right: 10%;
-  height: 30em;
+  height: 25em;
   width: auto;
 }
 
@@ -213,7 +213,7 @@ button{
 }
 
 .stage-2 input{
-  width: 19em;
+  width: 25em;
 }
 
 #orwell-continue{
@@ -232,8 +232,7 @@ button{
 }
 
 .interim-2-3{
-  background-color: #336600
-;
+  background-color: #336600;
 }
 
 .lucha-3{
@@ -243,22 +242,25 @@ button{
   background-image: url("./../../public/images/cuba.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
+  width:100vh;
 }
 
 #stage-3-text{
+  font-size: .9em;
   border-radius: 20%;
   background-color: white;
   opacity: .6;
-  width:60em;
+  width:45em;
   color: black;
-  padding: 4em;
+  padding: 3em;
 }
 
 #che{
   position: fixed;
   top: 6%;
   right: 10%;
-  height: 30em;
+  height: 25em;
   width: auto;
 }
 
@@ -275,15 +277,20 @@ button{
 }
 
 .repository-box{
-  height: 10em;
+  max-height: 7em;
   overflow: auto;
-  padding: 3em;
+  padding: 2em;
 }
 
 .repository-list a{
-  font-size: 1.5em;
+  font-size: 1em;
   color: #336600;
 }
+
+.repository-list{
+  font-size: 1.5em;
+}
+
 
 #stage-3-5{
   text-align: center;
@@ -291,12 +298,26 @@ button{
 
 #stage-3-6{
   font-family: arial;
-  font-size: 2em;
-  padding-top: 3em;
+  font-size: 1.5em;
+  padding-top: 2em;
 }
 
 #stage-3-6 a {
   color:white;
+}
+
+#stage-3-6 a:hover{
+  text-decoration: underline;
+}
+
+.repository-list{
+  list-style: none;
+}
+
+li:before {
+  content: "\2605";
+  font-size: .5em;
+  padding-right: 1em;
 }
 
 // vortex

@@ -25,11 +25,8 @@ User.prototype.getRepos = function(_username){
   // console.log(this.repositories);
   $(".username-placeholder").text(this.username);
   if(this.repositories.length === 0){
-    var cities = ["Havana","Santiago","Camaguey", "Holguin", "Santa Clara", "Guantanamo", "Bayamo", "Las Tunas"];
-    for (var l = 0; l < cities.length; l++) {
-      $(".repository-list").append("<li>" + cities[l] + "</li>");
+    $(".repository-list").html("<p>Lo siento compadre, no hay ningunos repositorios. Pe'o oye, verme hablando <a href='https://www.youtube.com/watch?v=CPCuzfDeUpc' target='_blank'>aqui</a> sobre la opresion americano.</p>");
     }
-  }
   }).fail(function(error){
     $.get('https://api.github.com/users/JKonTiki/repos?access_token=' + apiKey+'&type=all&sort=updated').then(function(response){
       var temp = [];
@@ -45,16 +42,10 @@ User.prototype.getRepos = function(_username){
       // console.log(this.repositories);
       $(".username-placeholder").text(this.username + ", for I believe this is the one you seek");
       if(this.repositories.length === 0){
-        var cities = ["Havana","Santiago","Camaguey", "Holguin", "Santa Clara", "Guantanamo", "Bayamo", "Las Tunas"];
-        for (var l = 0; l < cities.length; l++) {
-          $(".repository-list").append("<li>" + cities[l] + "</li>");
-        }
+        $(".repository-list").html("<p>Lo siento compadre, no hay ningunos repositorios. Pe'o oye, verme hablando <a href='https://www.youtube.com/watch?v=CPCuzfDeUpc' target='_blank'>aqui</a> sobre la opresion americano.</p>");
       }
     }).fail(function(error){
-      var cities = ["Havana","Santiago","Camaguey", "Holguin", "Santa Clara", "Guantanamo", "Bayamo", "Las Tunas"];
-      for (var l = 0; l < cities.length; l++) {
-        $(".repository-list").append("<li>" + cities[l] + "</li>");
-      }
+      $(".repository-list").html("<p>Lo siento compadre, no hay ningunos repositorios. Pe'o oye, verme hablando <a href='https://www.youtube.com/watch?v=CPCuzfDeUpc' target='_blank'>aqui</a> sobre la opresion americano.</p>");
     });
   });
 };
@@ -84,6 +75,7 @@ $(document).ready(function(){
     $(".favicon").remove();
     $("head").append("<link rel='icon' href='public/images/cuba-flag.png'  class='favicon'>");
     $("body").removeClass("lucha-2");
+    $("body").removeClass("interim-1-2");
     $("body").addClass("interim-2-3");
     battle3.play();
     setTimeout(function(){
