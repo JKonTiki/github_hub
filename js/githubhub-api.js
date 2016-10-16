@@ -63,8 +63,8 @@ $(document).ready(function(){
     $(".intro").hide();
     $(".risorgimento").hide();
     $("#guerra-civil").hide();
-    // $(".favicon").remove();
-    $("head").append("<span class='favicon'><link rel='icon' href='public/images/cuba-flag.png'></span>");
+    $(".favicon").remove();
+    $("head").append("<link rel='icon' href='public/images/cuba-flag.png'  class='favicon'>");
     $("body").removeClass("lucha-2");
     $("body").addClass("interim-2-3");
     battle3.play();

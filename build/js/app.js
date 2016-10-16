@@ -67,8 +67,8 @@ $(document).ready(function(){
     $(".intro").hide();
     $(".risorgimento").hide();
     $("#guerra-civil").hide();
-    // $(".favicon").remove();
-    $("head").append("<span class='favicon'><link rel='icon' href='public/images/cuba-flag.png'></span>");
+    $(".favicon").remove();
+    $("head").append("<link rel='icon' href='public/images/cuba-flag.png'  class='favicon'>");
     $("body").removeClass("lucha-2");
     $("body").addClass("interim-2-3");
     battle3.play();
@@ -116,8 +116,8 @@ $(document).ready(function(){
     var battle1 = document.getElementById("battle1");
     var a_contratiempo = document.getElementById("a-contratiempo");
     $(".intro").hide();
-    // $(".favicon").remove();
-    $("head").prepend("<span class='favicon'><link rel='icon' href='public/images/italy.png'></span>");
+    $(".favicon").remove();
+    $("head").prepend("<link rel='icon' href='public/images/italy.png' class='favicon'>");
     battle1.play();
     setTimeout(function(){
       a_contratiempo.play();
@@ -158,8 +158,8 @@ $(document).ready(function(){
     var bella_ciao = document.getElementById("bella-ciao");
     $(".intro").hide();
     $(".risorgimento").hide();
-    // $(".favicon").remove();
-    $("head").append("<span class='favicon'><link rel='icon' href='public/images/spain.png'></span>");
+    $(".favicon").remove();
+    $("head").append("<link rel='icon' href='public/images/spain.png' class='favicon'>");
     $("body").removeClass("lucha-1");
     $("body").addClass("interim-1-2");
     setTimeout(function(){
