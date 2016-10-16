@@ -22,6 +22,12 @@ User.prototype.getRepos = function(_username){
   }
   console.log(this.username);
   console.log(this.repositories);
+  if(this.repositories.length === 0){
+    var cities = ["Havana","Santiago","Camaguey", "Holguin", "Santa Clara", "Guantanamo", "Bayamo", "Las Tunas"];
+    for (var l = 0; l < cities.length; l++) {
+      $(".repository-list").append(cities[l]);
+    }
+  }
   }).fail(function(error){
     $.get('https://api.github.com/users/JKonTiki/repos?access_token=' + apiKey+'&type=all&sort=updated').then(function(response){
       var temp = [];
@@ -35,6 +41,12 @@ User.prototype.getRepos = function(_username){
       }
       console.log(this.username);
       console.log(this.repositories);
+      if(this.repositories.length === 0){
+        var cities = ["Havana","Santiago","Camaguey", "Holguin", "Santa Clara", "Guantanamo", "Bayamo", "Las Tunas"];
+        for (var l = 0; l < cities.length; l++) {
+          $(".repository-list").append(cities[l]);
+        }
+      }
     }).fail(function(error){
       var cities = ["Havana","Santiago","Camaguey", "Holguin", "Santa Clara", "Guantanamo", "Bayamo", "Las Tunas"];
       for (var l = 0; l < cities.length; l++) {
