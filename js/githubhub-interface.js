@@ -52,9 +52,9 @@ $(document).ready(function(){
     $("head").append("<link rel='icon' href='public/images/spain.png' class='favicon'>");
     $("body").removeClass("lucha-1");
     $("body").addClass("interim-1-2");
-    setTimeout(function(){
-      battle2.play();
-    }, 300);
+    // setTimeout(function(){
+    battle2.play();
+    // }, 300);
     setTimeout(function(){
       bella_ciao.play();
     }, 6500);

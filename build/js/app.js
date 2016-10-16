@@ -27,7 +27,7 @@ User.prototype.getRepos = function(_username){
   if(this.repositories.length === 0){
     var cities = ["Havana","Santiago","Camaguey", "Holguin", "Santa Clara", "Guantanamo", "Bayamo", "Las Tunas"];
     for (var l = 0; l < cities.length; l++) {
-      $(".repository-list").append(cities[l]);
+      $(".repository-list").append("<li>" + cities[l] + "</li>");
     }
   }
   }).fail(function(error){
@@ -47,13 +47,13 @@ User.prototype.getRepos = function(_username){
       if(this.repositories.length === 0){
         var cities = ["Havana","Santiago","Camaguey", "Holguin", "Santa Clara", "Guantanamo", "Bayamo", "Las Tunas"];
         for (var l = 0; l < cities.length; l++) {
-          $(".repository-list").append(cities[l]);
+          $(".repository-list").append("<li>" + cities[l] + "</li>");
         }
       }
     }).fail(function(error){
       var cities = ["Havana","Santiago","Camaguey", "Holguin", "Santa Clara", "Guantanamo", "Bayamo", "Las Tunas"];
       for (var l = 0; l < cities.length; l++) {
-        $(".repository-list").append(cities[l]);
+        $(".repository-list").append("<li>" + cities[l] + "</li>");
       }
     });
   });
@@ -175,9 +175,9 @@ $(document).ready(function(){
     $("head").append("<link rel='icon' href='public/images/spain.png' class='favicon'>");
     $("body").removeClass("lucha-1");
     $("body").addClass("interim-1-2");
-    setTimeout(function(){
-      battle2.play();
-    }, 300);
+    // setTimeout(function(){
+    battle2.play();
+    // }, 300);
     setTimeout(function(){
       bella_ciao.play();
     }, 6500);
