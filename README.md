@@ -12,6 +12,8 @@ Users traverse space and time to view a GitHub user's repositories.
 
 * The app can receive an inputted username
 * It can display that user's public repositories from GitHub
+* If GitHub username does not exist, defaults to 'Jkontiki'
+
 
 ## Technologies Used
 

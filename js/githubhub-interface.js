@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
 
   $(".launch").click(function(event){
@@ -11,13 +9,13 @@ $(document).ready(function(){
     $("head").prepend("<span class='favicon'><link rel='icon' href='public/images/italy.png'></span>");
     battle1.play();
     setTimeout(function(){
-      $("#song1").show();
       a_contratiempo.play();
     }, 4000);
     setTimeout(function(){
       $("body").addClass("lucha-1");
       $(".risorgimento").show();
       $(".stage-1").show();
+      $("#song1").show();
       setTimeout(function(){
         $("#garibaldi").fadeIn(5000);
         setTimeout(function(){
