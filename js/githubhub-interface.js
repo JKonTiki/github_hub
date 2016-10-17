@@ -1,6 +1,8 @@
 
 
 $(document).ready(function(){
+  // var floral_shoppe = document.getElementById("floral_shoppe");
+  // floral_shoppe.play();
 
   $(".launch").click(function(event){
     event.preventDefault();
@@ -9,6 +11,8 @@ $(document).ready(function(){
     $(".intro").hide();
     $(".favicon").remove();
     $("head").prepend("<link rel='icon' href='public/images/italy.png' class='favicon'>");
+    // floral_shoppe.pause();
+    $("#intro-song").hide();
     battle1.play();
     setTimeout(function(){
       a_contratiempo.play();
