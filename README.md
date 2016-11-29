@@ -19,9 +19,13 @@ Users traverse space and time to view a GitHub user's repositories.
 * If connection still fails, backup message displays
 
 Instructions:
+
 -clone repository
+
 -retrieve API token from github by navigating to settings page of personal account
--create .env file with the following scripts: _exports.apiKey = "...";_ (where '...' is the key retrieved from GitHub);
+
+-create .env file with the following scripts: _exports.apiKey = "...";_ (where '...' is the token retrieved from GitHub);
+
 -have fun
 
 
