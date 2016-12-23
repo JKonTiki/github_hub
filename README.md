@@ -3,9 +3,9 @@
 
 This project was inspired by a simple code school assignment: write a program that calls the GitHub Api to show a user's repositories. I happened to have been taken by [this article](http://www.newyorker.com/magazine/2007/07/09/the-insurgent) the evening before, and was inspired to tie in a greater theme relating to the contemporary open source movement. 
 
-**NOTE:** _Project **MUST** be experienced with audio._
+[Demo](https://jkontiki.github.io/github_hub/)
 
-[Demo Here](https://jkontiki.github.io/github_hub/)
+**NOTE:** _Project **MUST** be experienced with audio._
 
 
 ## Limitations
