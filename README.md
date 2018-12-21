@@ -1,7 +1,7 @@
 # GitHub_Hub
 
 
-This project was provoked by a simple code school assignment: write a program that calls the GitHub Api and show a user's repositories. I happened to have been taken by [this article](http://www.newyorker.com/magazine/2007/07/09/the-insurgent) the evening before, and was inspired to tie in a greater theme relating to the contemporary open source movement. I had a bit too much fun with this one, so bear with me here.
+They asked me to write a program that calls the GitHub Api and show a user's repositories. [I was inspired to fight for the cause](http://www.newyorker.com/magazine/2007/07/09/the-insurgent), and so here is my ode
 
 [Demo](https://jkontiki.github.io/github_hub/)
 
