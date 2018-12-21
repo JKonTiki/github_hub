@@ -1,7 +1,7 @@
 # GitHub_Hub
 
 
-They asked me to write a program that calls the GitHub Api and show a user's repositories. [I was inspired to fight for the cause](http://www.newyorker.com/magazine/2007/07/09/the-insurgent), and so here is my ode
+They asked me to write a program that calls the GitHub Api and show a user's repositories. [I was inspired for the cause](http://www.newyorker.com/magazine/2007/07/09/the-insurgent), and so here is my ode
 
 [Demo](https://jkontiki.github.io/github_hub/)
 
